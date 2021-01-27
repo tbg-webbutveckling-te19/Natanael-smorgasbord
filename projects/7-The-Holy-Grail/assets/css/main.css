@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+}
+
+header {
+    height: 200px;
+    background-color: #34495e;
+    width: 100%;
+}
+
+nav {
+    height: 50px;
+    background-color: #455a6f;
+}
+
+main {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+main section:nth-child(odd) {
+    background-color: #23384d;
+    flex: 1;
+    height: 600px;
+}
+
+main section:nth-child(2) {
+    flex: 4;
+    height: 600px;
+    background-color: #34495e;
+}
+
+footer {
+    height: 200px;
+    background-color: #455a6f;
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+body {
+    background-color: #00b894;
+    margin: 0px;
+}
+header {
+    background-color:grey;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: black;
+    font-size: 52px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+header p {
+    color: black;
+    font-size: 26px;
+    font-weight: 100px;
+    margin-top: 0px;  
+}
+main {
+    min-height: 200px;
+    background-color: grey;
+    display: flex; /* Parent is a flex-container*/
+    flex-direction: row; /* Main axis */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Aligns flex-items along the main axis*/
+    align-items: ; /* Aligns flex-items along the cross axis */
+}
+
+main section:nth-child(odd) {
+    background-color: #928;
+} 
+
+main section {
+    /* parent is a flex-container and we are flex-items*/
+    flex: 1;
+    background-color:blue;
+}   
+main section:nth-child(1) {
+    flex: 1;
+}
+
+main section:nth-child(2) {
+    flex: 4;
+}
+
+footer {
+    background-color:grey;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+footer section {
+    background-color: aqua;
+    flex: 1;
+    border-right: 2px solid white;
+    text-align: center;
+    color: orange;
+    letter-spacing: 4px;
+    font-family: Courier;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer section a {
+    color:black;
+    text-decoration: none;
+}
+
+footer section a:hover {
+    color: red;
+    font-size: 50px;
+    background-color: black;
+}

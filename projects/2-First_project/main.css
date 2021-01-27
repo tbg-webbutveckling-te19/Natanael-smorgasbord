@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body { 
+    background-color:#485460;  
+}
+h1 {
+    font-size: 44px;
+    text-align: center;
+    color:#16a085;
+    font-weight: 2000;
+    text-decoration: underline;
+}
+h2 {
+    color: #16a085;
+    font-weight: 1000;
+}
+
+p {
+    color: #16a085  ;
+}
+
+section {
+    width: 50%;
+    background-color:#353b48;
+    margin:auto;
+    padding:10px;
+    box-shadow: 2px 2px 5px ;
+
+}

@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    background-color: rgb(32, 55, 77);
+}
+
+nav {
+    background-color: #34495e;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.logoParent{
+    flex: 1;
+    display: block;
+}
+.logoParent img{
+    max-width:75%;
+    max-height:75%;
+}
+.buttons{
+    flex: 2;
+}
+.searchField {
+    height:45%;
+    width:70%;
+    font-size: 125%;
+}
+.button:nth-child(1) {
+    width:30%;
+    height:40%;
+    border-radius: 5px;
+    background-color: coral;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .4s ease;
+}
+.button:nth-child(2){
+    width:25%;
+    height:40%;
+    border-radius: 5px;
+    background-color: coral;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 3px;
+    transition: all .4s ease;
+}
+.button:nth-child(1):hover{
+    background: rgb(255, 199, 179);
+}
+.button:nth-child(2):hover{
+    background: rgb(255, 199, 179);
+}
+nav section {
+    flex: 4;
+    display: flex;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: #1F2B38;
+}
+
+nav h2 {
+    position: absolute;
+    left: 12%;
+    font-size: 32px;
+    color: Coral;
+}
+
+header {
+    position: relative;
+    left: 65%;
+    top: 20px;
+    width: 30vw;
+    height: 125px;
+    border-radius: 8%;
+    border: 3px solid black;
+}
+header section {
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #455a6f;
+    height: 100%;
+    width: 100%;
+    font-size: 140%;
+    text-align: center;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    left: 10%;
+    top: -110px;
+    width: 32vw;
+    min-height: 200px; 
+    background-color: #455a6f;
+    border-radius: 1%;
+    border: 4px solid black;
+}
+
+aside .category {
+    height: 300px;
+    margin: 2px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.categoryBorder {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 90%;
+}
+
+.list a, li {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 6px;
+    transition: all .12s ease;
+}
+.list a:hover {
+    color: coral;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 65%;
+    top: 275px;
+    width: 30.3vw;
+    min-height: 200px;
+    border-radius: 8%;
+    flex-wrap: wrap;
+}
+main section {
+    height: 350px;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #455a6f;
+    border-radius: 2%;
+    margin: 1px;
+}
+
+main a {
+    height:auto; 
+    bottom:0px;
+    display:block;
+    position:relative;
+    height: 100px;
+    width: 100px;
+    transition: all .2s ease;
+}
+
+main a:hover {
+    filter: brightness(130%);
+}
+
+.cover img:nth-child(2){
+    position: relative;
+    left: 290px;
+    bottom: -6px;
+}
+
+.cover h2 {
+    position: relative;
+    left: 350px;
+    bottom: 100px;
+    margin: 0;
+    width: 40%;
+}
+
+.cover h1 {
+    position: relative;
+    left: 350px;
+    bottom: 55px;
+    margin: 0;
+    width: 40%;
+}
+
+.cover h6 {
+    position: relative;
+    left: 350px;
+    bottom: -50px;
+    width: 100%;
+    margin: 0;
+    width: 40%;
+}
+
+.cover img {
+    margin: 4px;
+    border-radius: 2%;
+}
+footer {
+    background-color:  #1F2B38;
+    height: 75px;
+    width: 96%;
+    display: flex;
+}
+
+footer section {
+    display: flex;
+    flex: 4;
+    border: solid black 1px;
+    background-color: #1F2B38;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a:hover {
+    background-color: #0D1217;
+}
+
+footer a:visited {
+    color: #95a5a6;
+}
+
+footer a {
+    color: #95a5a6;
+    text-decoration: none;
+}
+
+.addFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

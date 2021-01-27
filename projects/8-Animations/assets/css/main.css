@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+/* WET CODE - Write Everything Twice */
+/* DRY CODE - Do not Repeat Yourself */
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #0984e3;
+}
+
+.animationGallery {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap-reverse row-reverse;
+
+    width: 95vw;
+    min-height: 80vh;
+
+    background-color: #0876CC;
+
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.parent {
+    width: 33%;
+    min-height: 300px;
+
+    border: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.parent h2 {
+    text-align: center;
+    color: snow;
+    text-shadow: 2px 2px 5px #000;/* x y size blur color */
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .1);
+
+    padding: 5px;
+
+    position: relative;
+}
+
+
+/*******************
+    Color Change
+********************/
+
+.colorChange {
+    Width: 100%;
+    height: 75px;
+
+    background-color: coral;
+    
+    margin: 15px 0px;
+}
+
+.colorChange h2 {
+    text-shadow: none;
+}
+
+.changeBg {
+    transition: background-color .5s ease; /* Cubic Bezier */
+}
+
+.changeBg:hover {
+    background-color: teal;
+}
+
+.changeText h2 {
+    transition: color .4s ease-in-out;
+}
+
+.changeText:hover h2 {
+    color: black;
+}
+
+.changeBorder {
+    border: 5px solid black;
+    transition: border-color .5s ease;
+}
+
+.changeBorder:hover {
+    border-color: skyblue;
+}
+/*******************
+        Opacity
+********************/
+.fade {
+    width: 75px;
+    height: 75px;
+
+    background-color: coral;
+    border: 0px solid black;
+
+    margin: 5px;
+
+    transition: opacity .4s, border .4s;
+}
+
+.fade:nth-child(1):hover {
+    opacity: 0;
+}
+
+.fade h2 {
+    text-shadow: none;
+    opacity: 0;
+
+    transition: opacity .4s;
+}
+
+.fade:nth-child(2):hover h2{
+    opacity: 1;
+}
+.fade:nth-child(3):hover {
+    border: 5px solid black;
+}
+
+/*******************
+        Scale
+********************/
+.scale {
+    width: 75px;
+    height: 75px;
+
+    background-color: coral;
+
+    margin: 2px;
+    
+    transition: transform .3s ease-in-out
+}
+
+.scale:nth-child(1):hover {
+    transform: scaleX(1.1);
+}
+
+.scale:nth-child(2):hover {
+    transform: scaleY(1.5);
+}
+
+.scale:nth-child(3):hover {
+    transform: scaleX(.9)
+}
+
+.scale:nth-child(4):hover {
+    transform: scaleY(0.5);
+}
+
+.scale:nth-child(5):hover {
+    transform: scale(1.5)
+}
+
+
+/*******************
+        Rotate
+********************/
+.rotate {
+    width: 100px;
+    height: 100px;
+
+    background-color: coral;
+
+    margin: 3px;
+
+    transition: transform .3s ease-out;
+}
+
+.rotate:nth-child(1):hover {
+    transform: rotate(90deg)
+}
+.rotate:nth-child(2):hover {
+    transform: rotate(-90deg)
+}
+.rotate:nth-child(3):hover {
+    transition: all 6s ease;
+}
+.rotate:nth-child(3):hover {
+    transform: rotate(100000deg) scale(1.5);
+    border-radius: 100%;
+}
+.rotate:nth-child(4):hover {
+    transform: rotateX(180deg)
+}
+.rotate:nth-child(5):hover {
+    transform: rotateY(180deg)
+}
+
+/*******************
+    Border radius
+********************/
+.br {
+    width: 150px;
+    height: 150px;
+
+    background-color: coral;
+
+    margin: 5px;
+}
+
+.square, .circle {
+    transition: border-radius .4s ease;
+}
+
+.square:hover {
+    border-radius: 100%;
+
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.circle:hover {
+    border-radius: 0%;
+}
+
+
+/* WET CODE - Write Everything Twice */
+/* DRY CODE - Do not Repeat Yourself */
+/*******************
+    Translate
+********************/
+.translate {
+    width: 75px;
+    height: 75px;
+
+    background-color: coral;
+    
+    margin: 5px;
+
+    transition: transform .4s ease-in-out;
+}
+
+.translate:nth-child(1):hover {
+    transform: translatex(10px);
+}
+
+.translate:nth-child(2):hover {
+    transform: translatey(10px);
+}
+
+.translate:nth-child(3):hover {
+    transform: translateX(-10px);
+}
+
+.translate:nth-child(4):hover {
+    transform: translatey(-10px);
+}
+
+.translate:nth-child(5):hover {
+    transform: translate(10px, 10px);
+}
+
+/*******************
+        Delay
+********************/
+.delay {
+    width: 50px;
+    height: 50px;
+
+    background-color: coral;
+
+    margin: 5px;
+    
+    transition: transform 1s ease;
+}
+
+.child:hover .delay {
+    transform: translatex(300px);
+}
+
+.delay:nth-child(odd) {
+    background-color: rebeccapurple;
+    transition-delay: .4s;
+}
+
+.delay:nth-child(4) {
+    background-color: seagreen;
+    transition-delay: .2s;
+}
+/*******************
+      Box Shadow
+********************/
+.shadow {
+    width: 100%;
+    height: 100%;
+}
+
+.shadow button {
+    width: 80%;
+    height: 50px;
+    
+    background-color: black;
+    color: silver;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    
+    transition: all .4s ease;
+}
+
+.btnShadow1:hover {
+    background: transparent;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.btnShadow2:hover {
+    background: transparent;
+    color: #fff;
+    box-shadow: -0px 45px 16px -16px #000; /* x y blur spread color */
+}
+
+/*******************
+        Filter
+********************/
+.filter1 , .filter2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/colors.jpg); /* ../ betyder att kliva upp ett steg i mappen. */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin: 5px;
+
+    transition: filter .4s ease;
+}
+
+
+.filter1:nth-child(1) {
+    filter: grayscale(100%); /* 0% Unchanged, 100% gray*/
+}
+
+.filter1:nth-child(1):hover {
+    filter: grayscale(0%);
+}
+.filter1:nth-child(2) {
+    filter: blur(1px)
+}
+
+.filter1:nth-child(2):hover {
+    filter: blur(0)
+}
+.filter1:nth-child(3) {
+    filter: brightness(50%);
+}
+
+.filter1:nth-child(3):hover {
+    filter: brightness(100%);
+}
+.filter2:nth-child(1) {
+    filter: contrast(100%);
+}
+
+.filter2:nth-child(1):hover {
+    filter: contrast(200%);
+}
+/* 0deg unchanged - between 0 deg and 360 deg change the color. Above 360deg wraps around*/
+.filter2:nth-child(2) {
+    filter: hue-rotate(0deg);
+}
+
+.filter2:nth-child(2):hover {
+    filter: hue-rotate(180deg);
+}
+
+/* 0% Unchanged- 100% fuly inverted colors */
+.filter2:nth-child(3) {
+    filter: invert(0%);
+}
+
+.filter2:nth-child(3):hover {
+    filter: invert(100%);
+}
+
+/*******************
+    BG animation
+********************/
+.bgAnimation {
+    animation: bgChange 1s alternate infinite;
+}
+@keyframes bgChange{
+    from {
+        background-color: crimson;
+    }
+    to {
+        background-color: darkorchid;
+    }
+}
+/*******************
+    Square animation
+********************/
+.squareAnimation {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    border: 1px solid black;
+
+    animation: move 10s steps(15) alternate infinite;  
+}
+
+@keyframes move {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 100px;
+        left: 100px;
+    }
+}
+/*******************
+    Move Around Animation
+********************/
+.moveAround {
+    width: 100px;
+    height: 100px;
+
+    background: coral;
+
+    animation: moveAround 5s infinite;
+}
+
+@keyframes moveAround {
+    0%, 100% {
+        transform: translate(0px)
+    }
+    20% {
+        transform: translate(100px, 0px);
+    }
+    40% {
+        transform: translate(100px, 100px);
+    }
+    60% {
+        transform: translate(-100px, 100px);
+    }
+    80% {
+        transform: translate(-100px, 0px)
+    }
+}
+
+/*******************
+Image Slider Animation
+********************/
+.imgSlider {
+    animation: imgSlider 10s infinite;
+
+    background-size: cover;
+    background-position: center;
+}
+@keyframes imgSlider {
+    0%, 100% {
+        background-image: url(../images/Block.jpg);
+    }
+    20% {
+        background-image: url(../images/Blue.jpg);
+    }
+    40% {
+        background-image: url(../images/Coffee.jpg);
+    }
+    60% {
+        background-image: url(../images/Eagle.jpg);
+    }
+    80% {
+        background-image: url(../images/Garlic.jpg);
+    }
+}
+/*******************
+    Ghost animation
+********************/
+.ghost {
+    width: 100%;
+    height: 100%;
+}
+
+.ghost img {
+    width: 50%;
+    animation: spooky 5s infinite;
+}
+
+@keyframes spooky {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+/*******************
+    Reusable classes
+********************/
+/*******************
+    Reusable classes
+********************/
+
+/*******************
+    Reusable classes
+********************/
+
+.addFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBorder {
+    border: 1px solid black;
+}
