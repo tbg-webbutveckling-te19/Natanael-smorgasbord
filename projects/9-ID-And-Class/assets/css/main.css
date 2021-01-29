@@ -1,20 +1,57 @@
 @charset "utf-8";
 
+body {
+    background-color: #f1f1f1;
+}
+
     /* . = class */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
 
-    .box {
-        width: 200px;
-        height: 200px;
+#unique {
+    width: 100px;
+    height: 100px;
 
-        background-color: coral;
-    }
-
-/* camel-case */
-.emptySpace {
-    width: 200px;
-    height: 200px;
-} 
+    background-color: cadetblue;
+}
 
 .roundedCorners {
     border-radius: 7px;
+}
+
+/* utility classes */
+
+.m-1 {
+    margin: 10px;
+}
+
+.mx-1 {
+
+}
+
+.my-1 {
+
+}
+
+.p-1 {
+
+}
+
+.px-1 {
+
+}
+
+.py-1 {
+
+}
+
+.rounded-5 {
+    border-radius: 5px;
+}
+
+.rounded-10 {
+    border-radius: 10px;
 }
