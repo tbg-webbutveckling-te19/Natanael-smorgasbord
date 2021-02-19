@@ -7,11 +7,22 @@
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/tablet.css" media="screen and (max-width: 950px)">
+    <link rel="stylesheet" href="assets/css/phone.css" media="screen and (max-width: 500px)">
 </head>
 <body>
     <div class="container">
         <header class="addFlex">
             <h1>My<span class="spanLogo">Logo.</span></h1>
+            <label for="checkboxHack"><img src="assets/images/Icon awesome-hamburger.svg" alt="menu icon" class="mobile-menu-icon"></label>
+            <input type="checkbox" id="checkboxHack">
+            <nav class="mobileMenu">
+                <ul class="addFlex">
+                    <li class="active">Start mobile</li>
+                    <li>About</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
             <nav>
                 <ul class="addFlex">
                     <li class="active">Start</li>

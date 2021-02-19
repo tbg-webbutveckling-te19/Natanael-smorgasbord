@@ -37,6 +37,18 @@ header h1 {
     color: #007AF3;
 }
 
+.mobile-menu-icon {
+    display:none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.input {
+    display: none;
+}
+
 nav {
     flex: 1;
     width: 40%;
@@ -46,6 +58,9 @@ nav ul {
     list-style: none;
     justify-content: space-evenly;
     font-size: 20px;
+}
+
+nav li {
     cursor: pointer;
 }
 
