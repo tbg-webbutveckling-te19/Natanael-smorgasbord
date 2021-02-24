@@ -74,6 +74,17 @@ main {
     flex: 1;
 }
 
+.main-left h2 {
+    padding-bottom: 40px;
+    padding-top: 60px;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.main-left p {
+    padding-left: 5px;
+}
+
 .main-center {
     background-color: #5F6C7E;
     flex: 3;
