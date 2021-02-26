@@ -21,7 +21,7 @@ header {
 
     padding: 0px 175px; /* two values equals top/bottom right/left */
 
-    background-color: #DFDFDF;
+    background-color: #475569;
 
     justify-content: space-between;
     align-items: center;
@@ -31,10 +31,11 @@ header h1 {
     flex: 1;
     font-size: 52px;
     font-weight: bold;
+    color: #0b243d;
 }
 
 .spanLogo {
-    color: #007AF3;
+    color: #0769ca;
 }
 
 .mobile-menu-icon {
@@ -79,6 +80,7 @@ main {
     padding-top: 60px;
     font-style: italic;
     padding-left: 5px;
+    color: #0b243d;
 }
 
 .main-left p {
@@ -88,6 +90,55 @@ main {
 .main-center {
     background-color: #5F6C7E;
     flex: 3;
+    position: relative;
+}
+
+.main-center h1 {
+    font-size: 52px;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    color: #0b243d;
+}
+
+.main-center img {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 5%;
+    filter: grayscale(70%);
+}
+
+.main-right {
+    position: relative;
+}
+
+.main-right h3 {
+    color: #0b243d;
+    padding-top: 10px;
+}
+
+.noticeable {
+    position: absolute;
+    top: 10%;
+    font-size: 110%;
+    left: 2.5%;
+}
+
+.bleu {
+    position: absolute;
+    left: 40%;
+    top: 12.5%;
+    font-size: 110%;
+}
+
+.main-right span {
+    color: #0b427a;
+}
+.main-right h2 {
+    padding-top: 60%;
+    padding-left: 25%;
+    color: #0b243d;
 }
 
 footer {
@@ -95,6 +146,11 @@ footer {
     height: 250px;
 
     background-color: #3E4043;
+}
+
+footer img {
+    flex-direction: row;
+    padding-top;
 }
 
 /* Utility Classes */
