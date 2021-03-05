@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+#checkboxHack {
+    visibility: hidden;
+}
+
 body {
     background-color: #F2F2F2;
 }
@@ -133,11 +137,11 @@ main {
 }
 
 .main-right span {
-    color: #0b427a;
+    color: #0b243d;
 }
 .main-right h2 {
-    padding-top: 60%;
-    padding-left: 25%;
+    margin-top: 60%;
+    margin-left: 25%;
     color: #0b243d;
 }
 
@@ -148,10 +152,17 @@ footer {
     background-color: #3E4043;
 }
 
-footer img {
-    flex-direction: row;
-    padding-top;
+footer section img {
+    flex-direction: column;
+    margin-top: 2.2%;
+    margin-left: 15%;
+    height: 100%;
 }
+
+footer section img:hover {
+    cursor: pointer;    
+}
+
 
 /* Utility Classes */
 
