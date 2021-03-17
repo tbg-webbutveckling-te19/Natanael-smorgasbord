@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:cornsilk;
+    margin: 0px ;
+    width: calc(100% - 20px);
+    margin: auto;
+}
+
+header {
+    background-color: coral;
+    height: 100px;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: coral;
+}
+
+main {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main section {
+    height: 400px;
+    width: 60%;
+    background-color: coral;
+}
+
+aside section {
+    background-color: coral;
+    width: 100%;
+}
+
+aside section:nth-child(1) {
+    height: 100px;
+}
+
+/* Utility Classes */
+
+.addM {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.addFlex {
+    display: flex;
+}
