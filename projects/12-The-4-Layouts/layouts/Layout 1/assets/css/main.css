@@ -23,24 +23,79 @@ nav {
 }
 
 main {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    min-height: 500px;
 }
 
-main section {
+.mainLeft {
+    flex: 2;
+}
+
+.mainLeft section {
     height: 400px;
-    width: 60%;
+    width: 100%;
     background-color: coral;
 }
 
-aside section {
+.mainRight {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.mainRight section {
     background-color: coral;
+}
+
+.mainRight> section:nth-child(1){
+    height: 250px;
     width: 100%;
 }
 
-aside section:nth-child(1) {
+.mainRight> section:nth-child(2){
+    height: 300px;
+    width: 100%;
+}
+
+.mainRight> section:nth-child(3){
+    height: 350px;
+    width: 100%;
+}
+
+.mainRight> section:nth-child(5) {
+    height: 105px;
+    width: 100%;
+}
+
+.mainRTwo {
+    width: 100%;
+    flex-direction: row;
+}
+
+.mainRTwo section {
+    background-color: coral;
+    width: 50%;
+    height: 175px;
+}
+
+.mainRTwo section:nth-child(1) {
+    margin-right: 5px;
+}
+
+.mainRTwo section:nth-child(2) {
+    margin-left: 5px;
+}
+
+
+aside {
+    width: 100%;
+}
+
+footer {
+    background-color: coral;
     height: 100px;
 }
+
 
 /* Utility Classes */
 
