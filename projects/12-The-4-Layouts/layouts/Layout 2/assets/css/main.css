@@ -12,8 +12,18 @@ body {
 }
 
 header {
+    height: 70px;
+}
+
+.logo {
     background-color: coral;
-    height: 100px;
+    flex: 1;
+    margin-right: 40%;
+}
+
+.banner {
+    background-color: coral;
+    flex: 3;
 }
 
 nav {
@@ -29,13 +39,17 @@ main {
 }
 
 .mainLeft {
-    flex: 2;
+    flex: 1;
 }
 
 .mainLeft section {
-    height: 400px;
     width: 100%;
-    background-color: #ff7f50;
+    height: 300px;
+    background-color: coral;
+}
+
+.mainLeft section:nth-child(3) {
+    height: 400px;
 }
 
 .mainRight {
@@ -45,47 +59,30 @@ main {
 
 .mainRight section {
     background-color: coral;
+    width:50%;
 }
 
 .mainRight> section:nth-child(1){
     height: 250px;
-    width: 100%;
 }
 
 .mainRight> section:nth-child(2){
     height: 300px;
-    width: 100%;
 }
 
-.mainRight> section:nth-child(3){
-    height: 350px;
-    width: 100%;
+.mainRight2 {
+    flex: 1;
+    margin-left: 10px;
 }
 
-.mainRight> section:nth-child(5) {
-    height: 105px;
-    width: 100%;
-}
-
-.mainRTwo {
-    width: 100%;
-    flex-direction: row;
-}
-
-.mainRTwo section {
+.mainRight2 section {
     background-color: coral;
     width: 50%;
-    height: 175px;
 }
 
-.mainRTwo section:nth-child(1) {
-    margin-right: 5px;
+.mainRight2> section:nth-child(1) {
+    height: 300px;
 }
-
-.mainRTwo section:nth-child(2) {
-    margin-left: 5px;
-}
-
 
 aside {
     width: 100%;
