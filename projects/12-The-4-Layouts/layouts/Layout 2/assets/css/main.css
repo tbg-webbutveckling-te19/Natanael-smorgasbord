@@ -39,7 +39,7 @@ main {
 }
 
 .mainLeft {
-    flex: 1;
+    flex: 2;
 }
 
 .mainLeft section {
@@ -59,15 +59,16 @@ main {
 
 .mainRight section {
     background-color: coral;
-    width:50%;
+    width:100%;
 }
 
 .mainRight> section:nth-child(1){
-    height: 250px;
+    height: 39%;
+    margin-bottom: 10px;
 }
 
 .mainRight> section:nth-child(2){
-    height: 300px;
+    height: 60%;
 }
 
 .mainRight2 {
@@ -77,10 +78,18 @@ main {
 
 .mainRight2 section {
     background-color: coral;
-    width: 50%;
+    width: 100%;
 }
 
-.mainRight2> section:nth-child(1) {
+.mainRight2 section:nth-child(1) {
+    height: 250px;
+}
+
+.mainRight2 section:nth-child(2) {
+    height: 450px;
+}
+
+.mainRight2 section:nth-child(3) {
     height: 300px;
 }
 
