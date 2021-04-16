@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+* {
+    font-family:'Courier New', Courier, monospace;
+    transition: filter 2s ease;
+}
+
 body {
     background-color:#e0e0e0;
     margin: 0px ;
@@ -73,31 +78,52 @@ header img:hover {
 }
 
 main {
-    background-color: indigo;
+    background-color:  rgb(165, 164, 164);
     height: 500px;
     width: 100%;
 }
 
 .imgBox {
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox section {
+    width: 260px;
     height: 200px;
-    width: 200px;
+    border: 1px solid #7e7979;
 }
 
 .filter1 {
     background-size: contain;
     background-repeat: no-repeat;
-
     margin: 5px;
-    transition: filter .4s ease;
 }
 
-.filter1:nth-child(1) {
-    filter: brightness(50%);
+.sectionGallery {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.filter1:nth-child(1):hover {
+.sectionGallery h3 {
+    margin: 0px;
+}
+
+.filter1 {
     filter: brightness(100%);
+    transition: filter 0.8s ease;
 }
+
+.filter1:hover {
+    filter: brightness(50%);
+    border: 3px solid black;
+}
+
 
 .addFlex {
     display: flex;
