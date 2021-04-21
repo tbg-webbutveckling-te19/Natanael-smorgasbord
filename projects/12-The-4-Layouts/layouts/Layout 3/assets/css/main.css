@@ -3,6 +3,8 @@
 * {
     font-family:'Courier New', Courier, monospace;
     transition: filter 2s ease;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 body {
@@ -108,6 +110,8 @@ main {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    height: 162px;
+    width: 248px;
 }
 
 .sectionGallery h3 {
@@ -124,6 +128,43 @@ main {
     border: 3px solid black;
 }
 
+footer {
+    height: 100px;
+}
+
+footer h2 {
+    margin: 0px;
+}
+
+footer h5 {
+    margin: 0px;
+}
+
+.contact {
+    flex:1;
+    flex-direction: column;
+}
+
+.licenses {
+    flex:1;
+    flex-direction: column;
+}
+
+.shipping {
+    flex:1;
+    flex-direction: column;
+}
+
+.socials {
+    flex:1;
+    flex-direction: column;
+}
+
+
+.resize {
+    height:auto;
+    width: 50px ;
+}
 
 .addFlex {
     display: flex;
