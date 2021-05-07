@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkorchid;
+    background: radial-gradient(white, transparent,  darkorchid 100%);
+    height: 100vh;
+}
+
+.parent {
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    background: radial-gradient(closest-side,red, white, purple);
+
+    border:1px solid black;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sibling-4 {
+    width: 50px;
+    height: 100px;
+
+    background-color: darkred;
+
+    position: absolute;
+    bottom: 380px;
+    left: 10px;
+}
+
+.sibling-3 {
+    width: 200px;
+    height: 50px;
+
+    background-color: darksalmon;
+    position: absolute;
+    bottom: -20px;
+    right: 300px;
+}
+
+.sibling-2 {
+    width: 50px;
+    height: 80px;
+
+    background-color: darkslategrey;
+    position: absolute;
+    bottom: -50px;
+    left: 92.5%;
+}
+
+.sibling-1 {
+    width: 350px;
+    height: 250px;
+
+    background-color: darkturquoise;
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 50%;
+}
+
+.child-3 {
+    width: 200px;
+    height: 100px;
+
+    background-color: deeppink;
+
+    position: absolute;
+
+    top: 60%;
+    left: 40%;
+}
+
+.child-2 {
+    height: 30px;
+    width: 300px;
+
+    background-color: forestgreen;
+
+    position: absolute;
+    left: 30%;
+    top: 30px;
+}
+
+.child-4 {
+    height: 30px;
+    width: 250px;
+    background-color: gainsboro;
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+}
+
+.child-1 {
+    height:100%;
+    width: 20%;
+
+    background-color: goldenrod;
+    position: absolute;
+    left:90%;
+    z-index: 2;
+    opacity: 75%;
+}

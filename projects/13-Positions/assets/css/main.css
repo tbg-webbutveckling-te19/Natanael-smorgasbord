@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+
+    position: relative;
+
+    background-color: coral;
+
+    border:1px solid black;
+    margin: auto;
+}
+
+.child {
+    width: 200px;
+    height: 300px;
+
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: 999;
+
+    background-color: cornflowerblue;
+
+    border:1px solid black;
+}
+
+.grandChild {
+    width: calc(100% - 20px);
+    margin: auto;
+    height: 100px;
+
+    position: absolute;
+    bottom: 20px;
+    left: -50px;
+    z-index: 3;
+
+    background-color: violet;
+
+    border: 1px solid black;
+}
+
+.grandGrandChild1 {
+    width: calc(85% - 30px);
+    height: 40px;
+
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    z-index: 2;
+
+    background-color: burlywood;
+
+    border: 1px solid black;
+}
+
+.grandGrandChild2 {
+    width: calc(85% -30px);
+    height: 40px;
+
+    background-color: lightpink;
+    
+    border: 1px solid black;
+
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    z-index: 2;
+
+}
+
+.sibling-1, .sibling-2 {
+    width: 300px;
+    height: 150px;
+
+    border: 1px solid black;
+
+    position: absolute;
+}
+
+.sibling-1 {
+    background-color: crimson;
+    right: 0;
+    top: 200px;
+    z-index: 3;
+}
+
+.sibling-2 {
+    background-color: cyan;
+    right: -140px;
+    z-index: 2;
+    top: 300px;
+}
