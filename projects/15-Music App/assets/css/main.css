@@ -47,6 +47,10 @@ main {
     text-align: center;
 }
 
+.searchField:focus {
+    outline: none;
+}
+
 #login {
     margin-top: 20px;
     background-color: rgba(0, 255, 255, 0.377);
