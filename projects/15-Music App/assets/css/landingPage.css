@@ -72,6 +72,20 @@ h1 {
     cursor: pointer;
 }
 
+main {
+}
+
+.songR {
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section {
+    height: 200px; 
+    width: 40%;
+}
+
 .addFlex {
     display: flex;
 }
