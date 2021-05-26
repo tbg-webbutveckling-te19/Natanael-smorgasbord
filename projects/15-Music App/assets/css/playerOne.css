@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    background-color: #152238;
+}
+
+header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.topHeader {
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.topHeader img:hover {
+    cursor: pointer;
+}
+
+.resize {
+    height:60vh;
+    width: 60vh;
+}
+
+h2,h4 {
+    color: whitesmoke;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    margin-top: 2.5vh;
+}
+
+.timer {
+    width: 80%;
+    justify-content: space-between;
+}
+
+#songBar {
+    width: 80%;
+    height: 5px;
+    background-color: rgba(245, 245, 245, 0.377);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.buttonClass {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.buttonClass img:hover {
+    cursor: pointer;
+}
+
+.addFlex {
+    display:flex;
+}
