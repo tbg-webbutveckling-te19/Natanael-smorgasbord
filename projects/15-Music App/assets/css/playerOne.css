@@ -9,6 +9,12 @@
 
 body {
     background-color: #152238;
+    overflow-y: hidden;
+}
+
+audio {
+    width: 0px;
+    height: 0px;
 }
 
 header {
