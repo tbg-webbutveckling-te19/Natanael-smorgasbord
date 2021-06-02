@@ -8,8 +8,40 @@
 }
 
 body {
-    background-color: #152238;
     overflow-y: hidden;
+    height: 100vh;
+    position: relative;
+    background: #000;
+}
+
+html {
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../images/aviciiBg.jpg");
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 audio {

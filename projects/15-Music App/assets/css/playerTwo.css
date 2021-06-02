@@ -8,7 +8,44 @@
 }
 
 body {
-    background-color: #152238;
+    overflow-y: hidden;
+    height: 100vh;
+    position: relative;
+    background: #000;
+}
+
+html {
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-image {
+  background-image: url("../images/metallicaBg.jpg");
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  
+  height: 100%;
+  width: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+audio {
+    width: 0px;
+    height: 0px;
 }
 
 header {
@@ -23,6 +60,10 @@ header {
     width: 90%;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.topHeader img:hover {
+    cursor: pointer;
 }
 
 .resize {
