@@ -7,8 +7,9 @@
     box-sizing: border-box;
 
     color: #fff;
-
-    /* font-family: 'cambria-italic', sans-serif; */
+    overflow: hidden;
+    font-family: 'fira-sans-ultralight', sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -19,6 +20,11 @@ body {
 header {
     /* 'Overflow: hidden;' to make it so that the menuIcon class do not expand the width of the website. */
     overflow: hidden; 
+
+}
+
+.menuIcon {
+    margin-right: 10px;
 }
 
 .menuIcon:hover {
@@ -27,28 +33,42 @@ header {
 
 .cBoxContainer {
     margin-top: 10px;
-    margin-left: 1600px;
+}
+
+.containerOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.containerOne H2 {
+    opacity: 82%;
+    font-family: 'fira-sans-ultralight', sans-serif;
 }
 
 .menu {
     align-items: center;
     flex-direction: column;
-    display: flex;
+    position: absolute;
+    display: block;
     margin-top: 70px;
     padding: 10px;
     width: 40%;
-    margin-left: 400px;
+    margin-left: 100px;
     transition: all 0.6s;
     font-size: 30px;
 }
 
 #checkbox:checked ~ .menu {
-    margin-left: -100px;
-} 
+    margin-left: -13%;
+}
+
 
 #checkbox {
     display: none;
 }
+
 
 
 nav ul {
@@ -59,19 +79,50 @@ nav ul {
 .menu ul {
     flex-direction: column;
     align-items: center;
+    width: 50%;
+    border: solid beige 1.5px;
+    transition: all 0.4s;
 }
 
+.underlineAnimation {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    opacity: 70%;
+    border: solid rgba(255, 255, 255, 0.2) 2px;
+    border-top: 0px;
+    border-left: 0px;
+  }
+  
+.underlineAnimation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 22px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+
+.underlineAnimation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 
 .menu li {
     font-weight: 400;
-    width: 250px;
+    width: 100%;
+    font-size: 20px;
     margin-top: 15px;
-    transition: underline 2s;
+    margin-left: 15%;
+    margin-bottom: 15px;
 }
 
 .menu li:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
 
