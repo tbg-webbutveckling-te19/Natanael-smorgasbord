@@ -1,47 +1,74 @@
 @charset "utf-8";
 
-/* OVERFLOW "*" */
 
-.menuIcon {
-    height: 30px;
+/* Nav */
+.navH2 {
+    opacity: 60%;
+    transition: opacity .6s;
 }
 
-.footerNav{
-    justify-content: center;   
+.navH2:hover {
+    opacity: 100%;
 }
-.displayRemove {
-    display:none;
+.underlineAnimationH2 {
+    all: none;
+}
+
+.underlineAnimationH2:after {
+    all: none;
+}
+
+.underlineAnimationH2:hover:after {
+    all: none;
+  }
+
+.containerOne {
+    overflow: visible;
 }
 
 .containerOne {
-    margin-top: 0.5%;
+    margin-top: 1.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.contanierOne H2 {
-    width: 100%;
-}
 
-.underlineAnimationH2 {
-    margin-left: 20px;
-}
 
 .cBoxContainer {
-    margin-left: 60%;
+    margin-left: -8%;
+    flex: 1;
 }
 
 #checkbox:checked ~ .menu {
     margin-left: -30%;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-.menu {
+
+.containerOne H2 {
+    font-size: 30px;
+    margin-top: 10%;
+    opacity: 70%;
+    border: solid rgba(255, 255, 255, 1) 1.5px;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+/* Menu */
+
+nav.menu {
+    margin-top: 100px;
     width: 100%;
 }
 
+.menuIcon {
+    height: 30px;
+}
+
+
+/* Main */
 main h2 {
     font-size: 20px;
 }
@@ -52,9 +79,22 @@ main h1 {
 }
 
 main {
-    height: 75%;
+    height: 70%;
 }
 
-main{
-    /* margin-top: 20%; */
+
+/* Footer */
+
+.footerNav h2 {
+    font-size: 30px;
+}
+
+.footerNav {
+    justify-content: center;   
+}
+
+/* Utility classes */
+
+.displayRemove {
+    display:none;
 }

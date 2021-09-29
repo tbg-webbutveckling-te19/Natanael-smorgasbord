@@ -1,50 +1,41 @@
 @charset "utf-8";
 
+/* Generic settings */
 * {
-    padding: 0;
+    padding: 0; 
     margin: 0;
 
     box-sizing: border-box;
 
     color: #fff;
     overflow: hidden;
+    
 }
-
-
-.mainBg {
-    height: 100vh;
-}
+    /* 'Overflow: hidden;' to make it so that the cBoxContainer class do not expand the width of the website. */
+    /* overflow: hidden;  */
 
 body {
-    /* background-image: url(../images/mainBg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header {
-    /* 'Overflow: hidden;' to make it so that the menuIcon class do not expand the width of the website. */
-    /* overflow: hidden;  */
-
+.mainBg {
+    height: 100vh;
 }
 
 .tabletNav {
     display: none;
 }
 
-.menuIcon {
-    margin-right: 10px;
-}
+/* Nav */
 
-.menuIcon:hover {
-    cursor: pointer;
-}
+/* Container is a container for the header H2 "Your purpose", "Our influense" & "Contact us". */
 
+/* Container settings and animations */
 .cBoxContainer {
     margin-top: 10px;
 }
 
-/* Container is a container for the header H2 "Your purpose", "Our influense" & "Contact us". */
-/* Container settings and animations */
 .containerOne {
     margin-top: 0.5%;
     display: flex;
@@ -97,6 +88,11 @@ header {
 
 
 /* Menu animations */
+
+.menuIcon:hover {
+    cursor: pointer;
+}
+
 .underlineAnimation {
     display: inline-block;
     position: relative;
@@ -126,6 +122,10 @@ header {
   }
 
   /* Menu */
+
+.menuIcon {
+    margin-right: 10px;
+}
 
 .menu li {
     font-weight: 400;
@@ -189,6 +189,7 @@ main {
     font-style: italic;
     height: 75%;
 }
+
 
 
 main h1 {

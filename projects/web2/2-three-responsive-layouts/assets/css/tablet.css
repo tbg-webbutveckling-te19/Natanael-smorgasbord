@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 
+/* Nav */
+/* Container settings and animations (Nav) */
 .containerOne {
     display: none;
 }
@@ -49,6 +51,18 @@
     border: solid rgba(255, 255, 255, 1) 2px;
     border-radius: 10px;
   }
+
+.underlineAnimation:hover:after {
+    transform: scaleX(0);
+  }
+
+/* Menu */
+
+.menu {
+    height: 100%;
+    width: 70%;
+}
+
 .menuIcon {
     height: 30px;
 }
@@ -56,10 +70,6 @@
 .menu {
     margin-top: 30px;
 }
-
-.underlineAnimation:hover:after {
-    transform: scaleX(0);
-  }
 
 /* Main */
 
