@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: #845EC2;
+    padding-top: 20px;
+}
+
+.gridContainer {
+    width: calc(100% - 100px);
+    height: calc(100vh - 150px);
+
+    border: 1px solid black;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 100px 3fr 25%;
+    grid-template-rows: 100px minmax(50px, auto) 100px;
+
+    grid-gap: 15px;
+}
+
+
+.gridItem:nth-child(odd) {
+    background-color: #FFC75F;
+}
+
+.gridItem:nth-child(even) {
+    background-color: #FF6F91;
+}
