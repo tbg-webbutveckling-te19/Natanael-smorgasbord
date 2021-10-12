@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.gridContainer {
+    width: calc(30%);
+    height: calc(50vh);
+
+    margin: auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: grid;
+
+    border: 1px solid black;
+}
+
+.gridItem {
+    border: 1px solid black;
+}
+
