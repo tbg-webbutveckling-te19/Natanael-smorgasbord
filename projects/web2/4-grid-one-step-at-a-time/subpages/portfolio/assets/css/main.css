@@ -7,15 +7,30 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #95a5a6;
     padding-top: 20px;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    color: rgba(255, 255, 255, 0.897);
+    font-size: 30px;
+}
+
 .gridContainer {
-    width: calc(30%);
-    height: calc(50vh);
+    border-radius: 2px;
+    width: calc(40%);
+    height: calc(80vh);
+    
+    background-color: #C2D2D3;
 
     margin: auto;
+    margin-bottom: 1%;
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -25,6 +40,19 @@ body {
 }
 
 .gridItem {
-    border: 1px solid black;
+    margin: 5px;
 }
 
+.containingImg {
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%);
+    transition: filter .4s;
+}
+
+.containingImg:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
