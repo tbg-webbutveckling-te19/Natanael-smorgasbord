@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(to right, #3498db, #2ecc71); /* uigradients.com */
+    margin: 0;
+    font-family: roboto;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 500px;
+    grid-template-areas: 
+        ". . todo . .";
+}
+
+.ToDo-container {
+    grid-area: todo;
+    margin-top: 200px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.ToDo-container h1, .ToDo-container input, .ToDo-container li {
+    padding: 10px;
+    font-weight: normal;
+}  
+
+.ToDo-container h1 {
+    color: white;
+    background: #3498db;
+    margin: 0;
+    position: relative;
+}
+
+.ToDo-container h1 i {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.ToDo-container input {
+    width: 100%;
+    border: none;
+    background: #eee;
+    box-sizing: border-box;
+}
+
+.ToDo-container input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+.ToDo-container ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    color: black;
+}
+
+.ToDo-container li:nth-child(even) {
+    background: #ecf0f1;
+}
+
+.ToDo-container li:nth-child(odd) {
+    background: #bdc3c7;
+}
+
+.ToDo-container li i {
+    background: #e74c3c;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+    transition: all .3s;
+    text-align: center;
+    display: inline-block;
+}
+
+.ToDo-container li:hover i {
+    opacity: 1;
+}
+
+/* Completed task in To-Do */
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}

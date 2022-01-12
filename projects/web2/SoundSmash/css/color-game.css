@@ -1,0 +1,99 @@
+body {
+    background: #232323;
+    margin: 0;
+}
+
+header {
+    height: 150px;
+    background-color: cornflowerblue;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+header h1 span {
+    font-size: 70px;
+}
+
+nav {
+    height: 30px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 5%;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: cornflowerblue;
+    /* text-transform: uppercase; */
+
+    display: flex;
+}
+
+nav li {
+    padding: 0 5px;
+}
+
+.easyHard li {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.easyHard li:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.active {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+#message {
+    color: red;
+}
+
+#newColor {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#newColor:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+main {
+    width: 45%;
+    height: 450px;
+    margin: auto;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.square {
+    background: red;
+    border: 2px solid black;
+    border-radius: 10px;
+}

@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+.some-class {
+    color: red;
+    border: 1px solid black;
+}
+
+.another-class {
+    color: purple;
+    font-size: 45px;
+}
+
+.toggle {
+    background: green;
+}
+
+/* 15-todo.js */
+.selected {
+    color: green;
+}
+
+/* 15-todo.js */
+.done {
+    color: grey;
+    text-decoration: line-through;
+    list-style-type: square;
+}
