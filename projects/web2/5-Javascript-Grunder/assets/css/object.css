@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.postKey {
+    font-weight: bold;
+}
+
+#updateCity {
+    border: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px dotted #ddd;
+    font-size: 26px;
+}
+
+#celebrate {
+    font-size: 25px;
+}

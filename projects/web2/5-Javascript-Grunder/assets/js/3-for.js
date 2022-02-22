@@ -77,5 +77,38 @@ number=5
 checkIfEvenOrOdd(number)
 
 for (var i = 0; i<11; i++) {
-    console.log(`${i}*9=` + i*9)
+    console.log(`${i} * 9 =` + i*9)
+}
+
+// Square with 5*5 stars
+// Nested for loop
+
+var squareOutput = document.getElementsByClassName("square")[0];
+
+for(var i = 0; i < 5; i++) {
+    for (var j =0; j < 7; j++) {
+        squareOutput.innerHTML += ("* ")
+    }
+    squareOutput.innerHTML += ("</br>")
+}
+
+for(var i = 0; i < 11; i++) {
+    for (var j =0; j < 11; j++) {
+        console.log(`${i} * ${j} = ${i*j} `)
+    }
+}
+
+var choises = ["President", "Food", "Games" , "Candy", "Water", "Cola"]
+
+for(var i = 0; i < choises.length; i++) {
+        if(i==0){
+            suffix="st"
+        } else if (i==1){
+            suffix="nd"
+        } else if (i==2){
+            suffix="rd"
+        } else {
+            suffix="th"
+        }
+        console.log(`My number ${i+1}${suffix} choise is ${choises[i]}`)
 }
