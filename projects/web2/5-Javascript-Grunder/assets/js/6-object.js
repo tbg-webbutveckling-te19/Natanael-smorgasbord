@@ -5,7 +5,7 @@ var person = {
     hometown: 'livelong',
     name: 'Sid',
     age: 35,
-    friends: ["bob", "Dylan",'Ai<ee','Deezee'],
+    friends: ["bob", "Dylan",'Aidee','Deezee'],
     isFriendly: true,
     birthday: function() {
         this.age++
@@ -61,6 +61,23 @@ btnCelebrate.addEventListener("click", () => {
     City: ${person.hometown}`;
 })
 
+
+/*
+***************************************
+Create your own code - movieDB
+***************************************
+*/
+ 
+// Create an array of movie objects
+// Each movie should have a title, rating and hasWatched properties
+// Iterate through the array with a forEach and print out something that looks like:
+/* 
+   - You have seen "Frozen" - 4.5 stars
+   - You have not seen "Django" - 5 stars
+   - You have seen "Vaiana" - 5 stars
+   - You have not seen "Shawshank Redemption" - 5 stars
+*/
+var movies= document.getElementById("movies")
 var movie = [
     {
         title: "Frozen",
@@ -76,8 +93,29 @@ var movie = [
         title: "Frozen",
         rating: 4,
         watched: true
+    },
+    {
+        title: "Shawshank",
+        rating: 2,
+        watched: false
     }    
 ];
+
 movie.forEach(function(post){
-    postsOutput.innerHTML += `<br> <span class="postKey">Movie:</span> ${post.title} <br> <span class="postKey">Rating.</span>${post.rating} <br> <span class="postKey">Has watched:</span> ${if (post.watched}<br>`
+    if (post.watched===true){
+        movies.innerHTML += `<br> <span class="postKey">You have seen :</span> ${post.title} - <br> <span class="postKey">Rating.</span>${post.rating}`
+    }
+    else
+    movies.innerHTML += `<br> <span class="postKey">You have not seen :</span> ${post.title} - <br> <span class="postKey">Rating.</span>${post.rating}`
 })
+
+var animalSound = {
+    dog: 'Woof',
+    wolf: 'Auoooo',
+    cat: 'Meow',
+    cow: 'Mooo',
+}
+
+
+var animalSounds = document.getElementById("animalSounds")
+animalSounds.innerHTML = `<br> Dog: ${animalSound.dog} <br> Wolf: ${animalSound.wolf} <br> Cet: ${animalSound.cat} <br> Cow: ${animalSound.cow} `
