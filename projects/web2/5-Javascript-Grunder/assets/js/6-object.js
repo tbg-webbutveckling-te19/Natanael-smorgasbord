@@ -119,3 +119,18 @@ var animalSound = {
 
 var animalSounds = document.getElementById("animalSounds")
 animalSounds.innerHTML = `<br> Dog: ${animalSound.dog} <br> Wolf: ${animalSound.wolf} <br> Cet: ${animalSound.cat} <br> Cow: ${animalSound.cow} `
+
+var friendList=["Adam","Emil"]
+
+var inputFriend = document.getElementById("updateFriend")
+inputFriend.addEventListener("keydown", function(e){
+    if (e.key === 'Enter') {
+        friendList.push(inputFriend.value)
+        inputFriend.value=""
+    }
+})
+
+var btnRemoveFriend = document.getElementById("removeFriend")
+btnRemoveFriend.addEventListener("click", () => {
+    friendList.pop()
+})
