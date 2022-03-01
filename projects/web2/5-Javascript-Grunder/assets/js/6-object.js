@@ -109,16 +109,60 @@ movie.forEach(function(post){
     movies.innerHTML += `<br> <span class="postKey">You have not seen :</span> ${post.title} - <br> <span class="postKey">Rating.</span>${post.rating}`
 })
 
+var div = document.getElementById("animals")
+var animalBtn = document.getElementsByClassName("animalButton")
+var aDog = document.getElementById("audioDog")
+var aWolf = document.getElementById("audioWolf")
+var aCow = document.getElementById("audioCow")
+var aCat = document.getElementById("audioCat")
 var animalSound = {
-    dog: 'Woof',
-    wolf: 'Auoooo',
-    cat: 'Meow',
-    cow: 'Mooo',
+    dog: function(){
+        div.innerHTML='Woof'
+        aDog.play()
+    },
+    
+    cat: function(){
+        div.innerHTML='Meow'
+        aCat.play()
+    },
+    
+    cow: function(){
+        div.innerHTML='Moo'
+        aCow.play()
+    },
+
+    wolf: function(){
+        div.innerHTML='Auoo'
+        aWolf.play()
+    },
+}
+
+for(var i = 0; i < animalBtn.length; i++){
+    animalBtn[i].addEventListener("click", function(){
+        switch (this.innerHTML){
+            case 'Dog':{
+                animalSound.dog();
+                break;
+            }
+            case 'Cat':{
+                animalSound.cat();
+                break;
+            }
+            case 'Cow':{
+                animalSound.cow();
+                break;
+            }
+            case 'Wolf':{
+                animalSound.wolf();
+                break;
+            }
+        }
+    })
 }
 
 
-var animalSounds = document.getElementById("animalSounds")
-animalSounds.innerHTML = `<br> Dog: ${animalSound.dog} <br> Wolf: ${animalSound.wolf} <br> Cet: ${animalSound.cat} <br> Cow: ${animalSound.cow} `
+// var animalSounds = document.getElementById("animalSounds")
+// animalSounds.innerHTML = `<br> Dog: ${animalSound.dog} <br> Wolf: ${animalSound.wolf} <br> Cet: ${animalSound.cat} <br> Cow: ${animalSound.cow} `
 
 var friendList=["Adam","Emil"]
 
