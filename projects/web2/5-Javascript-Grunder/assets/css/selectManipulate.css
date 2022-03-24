@@ -1,0 +1,22 @@
+.someClass {
+    color: red;
+    border: 1px solid black;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.anotherClass {
+    color: purple;
+    font-weight: bold;
+    font-size: 44px;
+    letter-spacing: 5px;
+}
+
+img {
+    display: block;
+}
+
+.todo {
+    text-decoration: line-through;
+    color: #eee;
+    
+}
