@@ -30,7 +30,7 @@ function removeDrinking(){
         hero.mana+=20
     }
     mana.innerHTML=`<span style="color: Blue">Mana: ${hero.mana}</span>`
-    manaBar.style.setProperty('--width', (this.mana/140)*100) /* Delar nuvarande mana och multiciplerar med hundra för att få ut % som sedan sätts in i mana baren */
+    manaBar.style.setProperty('--width', (hero.mana/140)*100) /* Delar nuvarande mana och multiciplerar med hundra för att få ut % som sedan sätts in i mana baren */
 }
 
 var hero = {
