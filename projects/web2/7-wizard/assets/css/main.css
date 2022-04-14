@@ -1,0 +1,157 @@
+body {
+    background-image: url(../images/backgroundImg.jpg);
+    /* background-size: 100% 100%; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.addFlex{
+    display: flex;
+}
+
+
+.resetBtn{
+    bottom: 200px;
+    position: absolute;
+    margin-top: 30px;
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+.showResetBtn{
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 20em;
+    font-size: large;
+    font-weight: 600;
+}
+
+.showResetBtn:hover{
+    cursor:pointer;
+}
+
+main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hpBar{
+    box-sizing: border-box;
+    width: 300px;
+    height: 20px;
+    background-color: #1b2f31;
+    border-radius: 20px;
+}
+
+.hpBar::before{
+    content: attr(data-label);
+    display: flex;
+    background-color: #27ae60;
+    box-sizing: border-box;
+    width: calc(var(--width, 0)*1%); /* Siffran som skrivs i --width översätts till direkta procent. Alltså om man har --widht: 5; blir det 5% av baren*/
+    height: 100%;
+    max-width:100%;
+    border-radius: 20px;
+}
+
+.manaBar{
+    box-sizing: border-box;
+    width: 300px;
+    height: 20px;
+    background-color: #1C2B59;
+    border-radius: 20px;
+}
+
+
+.manaBar::before{
+    content: attr(data-label);
+    display: flex;
+    background-color: #2980b9;
+    box-sizing: border-box;
+    width: calc(var(--width, 0)*1%); /* Siffran som skrivs i --width översätts till direkta procent. Alltså om man har --widht: 5; blir det 5% av baren*/
+    height: 100%;
+    max-width:100%;
+    border-radius: 20px;
+}
+
+.wizardImg{
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 2.5%;
+    width: 300px;
+    height: 200px;
+}
+
+#takeDmg{
+    height: 50px;
+}
+
+.btnGameOver{
+    pointer-events: none;
+}
+
+.wizardSpell {
+    display: none;
+    position: absolute;
+    bottom: 285px;
+    width: 5%;
+    height: 15%;
+    right: 510px;
+}
+
+.drinkingAnimation {
+    display: none;
+    position: absolute;
+    bottom: 180px;
+    width: 22.5%;
+    height: 35%;
+    right: 495px;
+}
+
+.styleBtn{
+    color: #1cc49d;
+    background-color: #1b2f31;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8em;
+    font-size: large;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.styleBtn:hover{
+    cursor:pointer;
+}
+
+
+
+
+.hp{
+    color: green;
+}
+
+.mana {
+    color: #4834d4;
+}
+
+
+.alive{
+    transform: rotateX(0deg);
+    transition: all 0.75s;
+}
+
+.dead{
+    transform: rotateX(90deg);
+}
