@@ -13,7 +13,8 @@ var today = new Date();
 var date1 =today.getDate();
 day.innerHTML=date1+"-"
 var date2= today.getMonth()
-month.innerHTML="-"+date2+1
+date2+=1
+month.innerHTML="-"+date2
 var date3= today.getFullYear()
 year.innerHTML="-"+date3
 

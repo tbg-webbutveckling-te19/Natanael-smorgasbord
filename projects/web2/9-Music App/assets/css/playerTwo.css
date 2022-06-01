@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    overflow-y: hidden;
+    height: 100vh;
+    position: relative;
+    background: #000;
+}
+
+html {
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+}
+
+.bg-image {
+  background-image: url("../images/metallicaBg.jpg");
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  
+  height: 100%;
+  width: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+audio {
+    width: 0px;
+    height: 0px;
+}
+
+header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.topHeader {
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.topHeader img:hover {
+    cursor: pointer;
+}
+
+.resize {
+    height:60vh;
+    width: 60vh;
+}
+
+h2,h4 {
+    color: whitesmoke;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2 {
+    margin-top: 2.5vh;
+}
+
+.timer {
+    width: 80%;
+    justify-content: space-between;
+}
+
+#songBar {
+    width: 80%;
+    height: 5px;
+    background-color: rgba(245, 245, 245, 0.377);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+#progressBar{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    height: 10px;
+    width: 60%;
+}
+
+.btn2{
+    display: none;
+}
+
+.btn2Show{
+    display: block;
+}
+
+.btn1Hide{
+    display: none;
+}
+
+.buttonClass {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.buttonClass img:hover {
+    cursor: pointer;
+}
+
+.addFlex {
+    display:flex;
+}

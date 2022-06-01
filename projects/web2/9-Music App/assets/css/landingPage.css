@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    background-color: #152238;
+    background-image: url(../images/bodyBackground.jpg);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h1,h3 {
+    color:whitesmoke;
+}
+
+.settingsIcon {
+    fill: white;
+}
+
+.settingsIcon:hover {
+    cursor: pointer;
+}
+
+.topHeader {
+    justify-content: space-between;
+    height: 50px;
+}
+
+.topHeader h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.topHeader img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.settingsIcon {
+    width: auto;
+    height: 80%;
+}
+
+.bottomHeader {
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomHeader h3 {
+    color: whitesmoke;
+}
+
+.bottomHeader section {
+    height: 75%;
+    width: 30%;
+}
+
+.resize {
+    margin-top: 7.5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    filter:brightness(75%);
+    transition: filter .4s ease;
+}
+
+.resize:hover {
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+
+.songR {
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section {
+    height: 200px; 
+    width: 40%;
+}
+
+main h1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.addFlex {
+    display: flex;
+}
